@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page title="Hello"?>
+<zk>
+<window title="My First portlet" border="normal" width="100%">
+	Hello, World!
+	<button label="Hi" onClick='alert("Welcome")'/>
+	<button label="ZK Version" onClick='alert(org.zkoss.zk.Version.UID)'></button>
+</window>
+</zk>

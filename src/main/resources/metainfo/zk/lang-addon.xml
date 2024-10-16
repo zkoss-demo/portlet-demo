@@ -1,0 +1,14 @@
+<language-addon>
+    <addon-name>custom</addon-name>
+    <version>1.0</version>
+    <language-name>xul/html</language-name>
+    <depends>zul</depends>
+    <!-- a patch for https://tracker.zkoss.org/browse/ZK-5815 -->
+    <javascript>
+        zk.afterResize(function() {
+            if (!zk.portlet2Data)
+            return;
+            delete zk.portlet2Data;
+        });
+    </javascript>
+</language-addon>
