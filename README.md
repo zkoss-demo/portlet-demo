@@ -2,6 +2,9 @@
 A simple portlet example. 
 According to [Deploying WARs](https://learn.liferay.com/w/dxp/liferay-development/reference/deploying-wars-wab-generator?p_l_back_url=%2Fsearch%3Fq%3Dliferay-plugin-package.properties&p_l_back_url_title=Search&highlight=liferay-plugin-package.properties), we don't have to deploy an OSGi bundled for making a portlet. This example doesn't use OSGi bundle and include standdard zk jar.
 
+# Limitation
+* You cannot put 2 zk portlets of different zk versions on the same page. The later-loaded ZK javascript  will override the previously-loaded version and cause all widgets not working properly.
+
 # Liferay Portal
 We use 7.4.3.125-ga125 as the target portal.
 
